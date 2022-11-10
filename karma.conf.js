@@ -1,6 +1,9 @@
 module.exports = function (config) {
     "use strict";
 
+
+    process.env.CHROME_BIN = require('puppeteer').executablePath();
+    
     config.set({
         frameworks: ["ui5"],
         plugins: [
